@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="UFLI_Brainwasher"]/description</xpath>
-        <value>
-            <description>This machine was once used by a Pact Nation for brainwashing dissidents or turned captured personnel, later prohibited as non-humanitarian equipment.\n\n&lt;color=#FFAA00&gt;&lt;i&gt;Converts the subject's culture to the player's primary ideology&lt;/i&gt;&lt;/color&gt;\n&lt;color=#FFAA00&gt;&lt;i&gt;Removes unwavering loyalty so they can be recruited normally&lt;/i&gt;&lt;/color&gt;</description>
-        </value>
-    </Operation>
-</Patch>

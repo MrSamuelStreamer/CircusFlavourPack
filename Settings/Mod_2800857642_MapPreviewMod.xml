@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="MapPreview.MapPreviewSettings">
-		<EnableMapPreviewInPlay>False</EnableMapPreviewInPlay>
-		<EnableToolbarInPlay>False</EnableToolbarInPlay>
-		<PreviewWindowPos>(1486, 320)</PreviewWindowPos>
-		<ToolbarWindowPos>(1486, 270)</ToolbarWindowPos>
-	</ModSettings>
-</SettingsBlock>

@@ -1,7 +1,7 @@
 ﻿<Defs>
     <ModlistConfigurator.ModlistPresetDef>
-        <defName>MSS_Configs_Preset_Shinobi</defName>
-        <presetLabel>Rimworld: Shinobi</presetLabel>
+        <defName>MSS_Configs_Preset_Circus</defName>
+        <presetLabel>Rimworld: Circus</presetLabel>
         <version>1.0</version>
     </ModlistConfigurator.ModlistPresetDef>
 </Defs>

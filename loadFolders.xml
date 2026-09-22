@@ -3,10 +3,5 @@
 	<v1.6>
 		<li>Common</li>
 		<li>1.6</li>
-		<li IfModActive="snafu.japanworld">Compatibility/snafu.japanworld</li>
-		<li IfModActive="KindSeal.UFLI">Compatibility/KindSeal.UFLI/1.6</li>
-		<li IfModActive="wowgag.EvolvingEnemyStrongholds">Compatibility/wowgag.EvolvingEnemyStrongholds/1.6</li>
-		<li IfModActive="cyberware.2077">Compatibility/cyberware.2077</li>
-		<li IfModActive="kimchibok.kimchianzbeta">Compatibility/kimchibok.kimchianzbeta</li>
 	</v1.6>
 </loadFolders>

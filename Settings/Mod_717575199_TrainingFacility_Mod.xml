@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="TrainingFacility.TrainingFacility_ModSettings">
-		<learningXpMultiplierShooting>1.243729</learningXpMultiplierShooting>
-		<learningXpMultiplierMelee>1.243729</learningXpMultiplierMelee>
-	</ModSettings>
-</SettingsBlock>

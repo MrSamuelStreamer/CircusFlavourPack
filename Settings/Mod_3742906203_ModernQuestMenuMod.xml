@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="ModernQuestMenu.ModernQuestMenuSettings">
-		<floatW>980</floatW>
-		<floatH>620</floatH>
-		<floatX>403</floatX>
-		<floatY>159</floatY>
-	</ModSettings>
-</SettingsBlock>

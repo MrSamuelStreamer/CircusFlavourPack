@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="ImplantSalvage.ImplantSalvageSettings">
-		<maxDestroyChance>1</maxDestroyChance>
-		<minDestroyChance>0.25</minDestroyChance>
-		<showIntactChance>False</showIntactChance>
-	</ModSettings>
-</SettingsBlock>

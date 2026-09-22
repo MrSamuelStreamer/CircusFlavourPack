@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AbilityDef[defName="example"]/statBases</xpath>
+        <value>
+            <statBases>
+                <Ability_Duration>8</Ability_Duration>
+            </statBases>
+        </value>
+    </Operation>
+</Patch>

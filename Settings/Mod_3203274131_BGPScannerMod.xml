@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="BGPScanner.BGPScannerSettings">
-		<timeMultiplier>1.5</timeMultiplier>
-		<autoModeEfficiency>0.998654246</autoModeEfficiency>
-		<autoMode>True</autoMode>
-		<allowUnderRoof>True</allowUnderRoof>
-	</ModSettings>
-</SettingsBlock>

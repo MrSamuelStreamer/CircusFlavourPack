@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="CombatExtended.Settings">
-		<ShowTutorialPopup>False</ShowTutorialPopup>
-		<fasterRepeatShots>True</fasterRepeatShots>
-		<enableCIWS>False</enableCIWS>
-	</ModSettings>
-</SettingsBlock>

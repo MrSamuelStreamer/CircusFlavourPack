@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="VFED.DesertersSettings">
-		<IntelFromExtraction>2</IntelFromExtraction>
-		<ResponseTimeMultiplier>0.535614133</ResponseTimeMultiplier>
-	</ModSettings>
-</SettingsBlock>

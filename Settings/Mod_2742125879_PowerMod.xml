@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="EccentricPower.PowerModSettings">
-		<allowMovingWaterRefining>True</allowMovingWaterRefining>
-		<allowFreshwaterRefining>True</allowFreshwaterRefining>
-	</ModSettings>
-</SettingsBlock>
