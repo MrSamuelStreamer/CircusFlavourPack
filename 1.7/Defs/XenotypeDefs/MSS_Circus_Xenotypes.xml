@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSS_Clown</defName>
+    <label>Clownkin</label>
+    <description>Clownkin were created by manipulating Sanguophage genelines to act as the perfect entertainers, court jesters, and bards for bored Glitterworld aristocracy. Though the experiments were successful, and the Clownkin became jolly, happy-go-lucky, fools, their bloodfeeding nature was not fully supressed, and occasionally the clownkin are believed to break into a bloody frenzy, outright devouring their targets.</description>
+    <descriptionShort>A sanguophage offshoot designed to be jolly and joyous, with a dark underside.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon53</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>DiseaseFree</li>
+      <li MayRequire="mss.flavourpack">MSS_VoidsEmbrace</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_FeedingFrenzy</li>
+      <li MayRequire="redmattis.bigsmall.core">VU_Pounce</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_SnekEngulf</li>
+      <li>MoveSpeed_Quick</li>
+      <li>Mood_Sanguine</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Bloodlust</li>
+      <li>KillThirst</li>
+      <li>Sterile</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_AlienApperanceStandards_Lesser</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownBlue</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownGreen</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownOrange</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownPurple</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownRed</li>
+      <li MayRequire="bahlivern.clownvoicegene">BAH_ClownVoice</li>
+      <li MayRequire="trumpet.voice.gene">Trumpet_voice</li>
+      <li>Hair_LightBlue</li>
+      <li>Hair_LightTeal</li>
+      <li>Hair_LightGreen</li>
+      <li>Hair_Pink</li>
+      <li>Hair_LightPurple</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_BloodHair</li>
+      <li>Skin_SheerWhite</li>
+      <li>RobustDigestion</li>
+      <li>Unstoppable</li>
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudePoor_Intellectual</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_Bubblegum</li>
+    </genes>
+  </XenotypeDef>
+  <XenotypeDef>
+    <defName>MSS_Mime</defName>
+    <label>Mimekin</label>
+    <description>Mimekin are the strange offshoot of the clownkin xenotype when something goes terribly wrong. All of the fun and whimsy and devouring gets inverted into pure negativity. Many believe Mimekin to be in a perpetual state of self-loathing.</description>
+    <descriptionShort>An archite powered, neutral being created by a failed Clownkin conversion.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon17</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>DiseaseFree</li>
+      <li>TotalHealing</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_SelfRepairingApparel</li>
+      <li MayRequire="mss.flavourpack">MSS_VoidsEmbrace</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor_Great</li>
+      <li MayRequire="ludeon.rimworld.odyssey">VacuumResistance_Total</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_CannotWearArmor</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Glamour</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>Mood_Pessimist</li>
+      <li>UVSensitivity_Mild</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_NoEquip</li>
+      <li>Aggression_DeadCalm</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Unpretentious</li>
+      <li>Pain_Extra</li>
+      <li>Sterile</li>
+      <li>Body_Thin</li>
+      <li>Hair_SnowWhite</li>
+      <li>Hair_Gray</li>
+      <li>Hair_InkBlack</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Hair_TrueWhite</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Skin_Marble_White</li>
+      <li>Skin_InkBlack</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_InsultProof</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_PerfectMemory</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Xenolocked</li>
+      <li>Learning_Fast</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_Black</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_GhostGrey</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_White</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Clown_SS13Outfit"]/apparel</xpath>
+        <value>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Clown_JSawOutfit"]/apparel</xpath>
+        <value>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Clown_SS13ClownMask"]/apparel</xpath>
+        <value>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Clown_JSawMask"]/apparel</xpath>
+        <value>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Clown_PwiseMask"]/apparel</xpath>
+        <value>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </value>
+    </Operation>
+</Patch>
