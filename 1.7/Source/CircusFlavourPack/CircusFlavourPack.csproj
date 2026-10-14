@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Library</OutputType>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>CircusFlavourPack</RootNamespace>
+        <AssemblyName>CircusFlavourPack</AssemblyName>
+        <OutputPath>../../Assemblies/</OutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <GameRoot>../../../../../</GameRoot>
+        <HarmonyMod17 Condition="'$(HarmonyMod17)' == ''">$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/0Harmony.dll</HarmonyMod17>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <Optimize>false</Optimize>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- Same sources as 1.6: one code base, two builds. -->
+        <Compile Include="../../../1.6/Source/CircusFlavourPack/**/*.cs"
+                 Exclude="../../../1.6/Source/CircusFlavourPack/obj/**;../../../1.6/Source/CircusFlavourPack/bin/**" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(GameRoot)Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityStubs">
+            <HintPath>$(GameRoot)UnityStubs.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Waylith">
+            <HintPath>$(GameRoot)Waylith.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="0Harmony">
+            <HintPath>$(HarmonyMod17)</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+</Project>
