@@ -13,7 +13,6 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
         <GameRoot>../../../../../</GameRoot>
-        <HarmonyMod17 Condition="'$(HarmonyMod17)' == ''">$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/0Harmony.dll</HarmonyMod17>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <Optimize>false</Optimize>
@@ -44,7 +43,8 @@
             <Private>False</Private>
         </Reference>
         <Reference Include="0Harmony">
-            <HintPath>$(HarmonyMod17)</HintPath>
+            <HintPath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll')">C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
+            <HintPath Condition="Exists('$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/0Harmony.dll')">$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/0Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
