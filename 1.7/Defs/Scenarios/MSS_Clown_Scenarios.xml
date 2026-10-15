@@ -5,7 +5,7 @@
 		<label>Dark Circus</label>
 		<description>The Glitterworlds always needed jesters, jokers, and bards to keep the courts of the rich and bored entertained. An urbworld scientist had an idea for how to exploit this gap in the market and turn a nice profit - Sanguophage derived entertainers. They could be beaten, broken, and laughed at, but their undying and unaging nature made them perfect for a generational plaything. 
 			
-			The result was the Clownkin - a jolly, happy-go-lucky, court jester, but their bloodfeeding nature was not fully supressed, and without the fangs to process the Hemogen they need they have to get it through other means - HUMAN FLESH!</description>
+		The result was the Clownkin - a jolly, happy-go-lucky, court jester, but their bloodfeeding nature was not fully supressed, and without the fangs to process the Hemogen they need they have to get it through other means - HUMAN FLESH!</description>
 		<scenario>
 			<summary>Three victims of genetic experimentation lure unsuspecting visitors to their doom.</summary>
 			<playerFaction>
@@ -52,7 +52,7 @@
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
-					<thingDef>Apparel_AirwireHeadset</thingDef>
+					<thingDef>MSSFP_Vending_Machine</thingDef>
 					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
