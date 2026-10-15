@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>Weiner_Blueprint</defName>
+		<label>Weiner</label>
+		<description>The Oskar Weinermobile, produced by Sarg industries after long and hard weiner research, and for some reason called the "Oskar", possibly named after the very weiner that Sarg studied the longest. Regarded as the worlds greatest mode of transport, the weinermobile was pulled from the market due to lack of protector for the riders, quickly rotting exterior, and generally off-putting stench.\n\nConsumes a lot of fuel, but capable of handling a lot of people.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Vehicles/Weiner/Weiner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>5.85</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1250</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,4)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Meat_Human>250</Meat_Human>
+			<Steel>100</Steel>
+			<WoodLog>50</WoodLog>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>Weiner</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

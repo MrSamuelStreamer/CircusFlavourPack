@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Silver"]/label</xpath>
+        <value>
+            <label>Tickets</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Silver"]/description</xpath>
+        <value>
+            <description>A little paper ticket used as currency on certain worlds and inexplicably used to construct certain things, such as sterile floors. No one quite knows why.</description>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Silver"]/stuffProps/color</xpath>
+        <value>
+            <color>(50,168,82)</color>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Silver"]/stuffProps/statFactors/Flammability</xpath>
+        <value>
+            <Flammability>1</Flammability>
+        </value>
+    </Operation>
+</Patch>
