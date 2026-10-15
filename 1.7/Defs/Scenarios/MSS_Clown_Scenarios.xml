@@ -50,6 +50,11 @@
 					<thingDef>VCE_SimpleDessert</thingDef>
 					<count>20</count>
 				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Apparel_AirwireHeadset</thingDef>
+					<allowRoofed>True</allowRoofed>
+				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MedicineIndustrial</thingDef>
@@ -66,6 +71,12 @@
 					<stuff>Cloth</stuff>
 					<count>2</count>
 					<quality>Excellent</quality>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>MonolithFragment</thingDef>
+					<count>5</count>
+					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>

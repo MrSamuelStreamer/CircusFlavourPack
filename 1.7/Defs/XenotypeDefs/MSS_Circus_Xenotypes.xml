@@ -11,30 +11,30 @@
       <li>ArchiteMetabolism</li>
       <li>DiseaseFree</li>
       <li MayRequire="mss.flavourpack">MSS_VoidsEmbrace</li>
+      <li MayRequire="redmattis.bigsmall.core">Cannibal</li>
       <li MayRequire="redmattis.bigsmall.core">BS_FeedingFrenzy</li>
       <li MayRequire="redmattis.bigsmall.core">VU_Pounce</li>
       <li MayRequire="redmattis.bigsmall.core">BS_SnekEngulf</li>
+      <li>RobustDigestion</li>
       <li>MoveSpeed_Quick</li>
       <li>Mood_Sanguine</li>
       <li MayRequire="redmattis.bigsmall.core">BS_Bloodlust</li>
       <li>KillThirst</li>
       <li>Sterile</li>
       <li MayRequire="redmattis.bigsmall.core">BS_AlienApperanceStandards_Lesser</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_CreepyHaired</li>
+      <li>Hair_LongOnly</li>
+      <li>Beard_NoBeardOnly</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownBlue</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownGreen</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownOrange</li>
+      <li MayRequire="clownnosegene.mod">Nose_ClownPink</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownPurple</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownRed</li>
       <li MayRequire="bahlivern.clownvoicegene">BAH_ClownVoice</li>
       <li MayRequire="trumpet.voice.gene">Trumpet_voice</li>
-      <li>Hair_LightBlue</li>
-      <li>Hair_LightTeal</li>
-      <li>Hair_LightGreen</li>
-      <li>Hair_Pink</li>
-      <li>Hair_LightPurple</li>
-      <li MayRequire="redmattis.bigsmall.core">BS_BloodHair</li>
       <li>Skin_SheerWhite</li>
-      <li>RobustDigestion</li>
+      <li MayRequire="det.avaloi">DV_AvaloiHairColors</li>
       <li>Unstoppable</li>
       <li>AptitudePoor_Mining</li>
       <li>AptitudePoor_Cooking</li>

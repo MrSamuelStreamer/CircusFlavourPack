@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PreceptDef>
+    <defName>Cannibalism_RequiredCompulsory</defName>
+    <issue>Cannibalism</issue>
+    <label>required (compulsory)</label>
+    <description>Our curse is to eat human flesh, we do not necessarily enjoy it, but without it our minds turn to madness. We can eat other foods happily.</description>
+    <impact>High</impact>
+    <displayOrderInImpact>1001</displayOrderInImpact>
+    <likesHumanLeatherApparel>true</likesHumanLeatherApparel>
+    <requiredMemes>
+      <li>Cannibal</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteHumanMeat</eventDef>
+        <thought>AteHumanMeat_RequiredRavenous</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>NoRecentHumanMeat_RequiredRavenous</thought>
+        <description>No human meat for {HUMANMEATREQUIREDINTERVAL} days</description>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>HumanLeatherApparel_RequiredRavenous</thought>
+        <description>Humanleather apparel</description>
+        <tooltipShowMoodRange>true</tooltipShowMoodRange>
+      </li>
+    </comps>
+  </PreceptDef>
+</Defs>
