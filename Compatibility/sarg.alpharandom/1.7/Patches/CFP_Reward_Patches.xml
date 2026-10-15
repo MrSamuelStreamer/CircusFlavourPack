@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root</xpath>
+    <value>
+      <root Class="ThingSetMaker_RandomOption">
+        <fixedParams>
+          <minSingleItemMarketValuePct>0.15</minSingleItemMarketValuePct>
+        </fixedParams>
+        <options>
+
+          <!-- High frequency rewards -->
+          <li>
+            <weight>5</weight>
+            <thingSetMaker Class="ThingSetMaker_MarketValue">
+              <fixedParams>
+                <allowNonStackableDuplicates>true</allowNonStackableDuplicates>
+                <filter>
+                  <thingDefs>
+                    <li>ARandom_FateManipulator</li>
+                    <li>ARandom_FateManipulator_Benign</li>
+                    <li>ARandom_FateManipulator_Dark</li>
+                    <li>ARandom_FateManipulator_Chaotic</li>
+
+                    <li>ARandom_MaterialsLootBox</li>
+                    <li>ARandom_MedicineLootBox</li>
+                    <li>ARandom_TextilesLootBox</li>
+                    <li>ARandom_DrugsLootBox</li>
+                    <li>ARandom_ProduceBox</li>
+                    <li>ARandom_MealsBox</li>
+                    <li>ARandom_BooksBox</li>
+                    <li>ARandom_DrinksBox</li>
+                    <li>ARandom_WeaponsBox</li>
+                    <li>ARandom_ApparelLootBox</li>
+                    <li>ARandom_TribalLootBox</li>
+                    <li>ARandom_ShellsLootBox</li>
+                    <li>ARandom_ValuablesLootBox</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">ARandom_HemogenCrate</li>
+                    <li>ARandom_LootBox</li>
+                  </thingDefs>
+                </filter>
+              </fixedParams>
+            </thingSetMaker>
+          </li>
+
+          <!-- Mid frequency rewards -->
+          <li>
+            <weight>2.5</weight>
+            <thingSetMaker Class="ThingSetMaker_MarketValue">
+              <fixedParams>
+                <allowNonStackableDuplicates>true</allowNonStackableDuplicates>
+                <filter>
+                  <thingDefs>
+                    <li>ARandom_LootBox_High</li>
+                  </thingDefs>
+                </filter>
+              </fixedParams>
+            </thingSetMaker>
+          </li>
+
+          <!-- Low frequency rewards -->
+          <li>
+            <weight>1</weight>
+            <thingSetMaker Class="ThingSetMaker_MarketValue">
+              <fixedParams>
+                <allowNonStackableDuplicates>true</allowNonStackableDuplicates>
+                <filter>
+                  <thingDefs>
+                    <li>ARandom_LootBox_SuperHigh</li>
+                  </thingDefs>
+                </filter>
+              </fixedParams>
+            </thingSetMaker>
+          </li>
+
+        </options>
+      </root>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/label</xpath>
+    <value>
+      <label>stinkypoopoo</label>
+    </value>
+  </Operation>
+
+</Patch>
