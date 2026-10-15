@@ -52,7 +52,7 @@
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
-					<thingDef>Apparel_AirwireHeadset</thingDef>
+					<thingDef>MSSFP_Vending_Machine</thingDef>
 					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
