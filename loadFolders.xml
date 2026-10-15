@@ -3,12 +3,10 @@
 	<v1.6>
 		<li>Common</li>
 		<li>1.6</li>
-		<li>Textures</li>
 	</v1.6>
 	<v1.7>
 		<li>Common</li>
 		<li>1.7</li>
-		<li>Textures</li>
 		<li IfModActive="zal.clownmod">Compatibility/zal.clownmod</li>
     	<li IfModActive="sarg.alpharandom">Compatibility/sarg.alpharandom/1.7</li>
 	</v1.7>

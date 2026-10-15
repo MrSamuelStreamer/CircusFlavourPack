@@ -5,9 +5,8 @@
 		<defName>MSS_WeinerMobile</defName>
 		<label>Weinermobile</label>
 		<description>The Oskar Weinermobile, produced by Sarg industries after long and hard weiner research, and for some reason called the "Oskar", possibly named after the very weiner that Sarg studied the longest. Regarded as the worlds greatest mode of transport, the weinermobile was pulled from the market due to lack of protector for the riders, quickly rotting exterior, and generally off-putting stench.\n\nConsumes a lot of fuel, but capable of handling a lot of people.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		
 		<graphicData>
-			<texPath>Things/Vehicles/Land/Tier1/WeinerMobile/WeinerMobile</texPath>
+			<texPath>Things/Vehicles/WeinerMobile/WeinerMobile</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>3.25</drawSize>
@@ -15,18 +14,12 @@
 			<colorTwo>(80, 85, 81)</colorTwo>
 			<colorThree>(80, 85, 81)</colorThree>
 		</graphicData>
-		
 		<fillPercent>0.8</fillPercent>
-		
 		<buildDef>MSS_WeinerMobile_Blueprint</buildDef>
-		
 		<size>(2,3)</size>
-		
-		
 		<vehicleCategory>Transport</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
-		
 		<statBases>
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
@@ -34,34 +27,26 @@
 			<Flammability>0.25</Flammability>
 			<MarketValue>850</MarketValue>
 		</statBases>
-		
 		<vehicleStats>
 			<Mass>45</Mass>
 			<MoveSpeed>6</MoveSpeed>
 			<CargoCapacity>500</CargoCapacity>
-			<RepairRate>0.5</RepairRate>
-			
+			<RepairRate>0.5</RepairRate>	
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>
 				<key>MoveStart</key>
 				<value>AV_EarlyCarSound</value>
 			</li>
-			
 		</soundOneShotsOnEvent>
-	
-		
 		<race>
 			<baseBodySize>2</baseBodySize>
 		</race>
-		
 		<properties>
-			
 			<diagonalRotation>false</diagonalRotation>
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 1)</li>
 			</vehicleJobLimitations>
-			
 			<roles>
 				<li>
 					<key>driver</key>
@@ -90,7 +75,6 @@
 				</li>
 			</roles>
 		</properties>
-		
 		<components>
 			<li>
 				<key>Engine</key>
@@ -290,7 +274,6 @@
 				<label>Chemtank</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<reactors>
 					<li Class = "Vehicles.Reactor_FuelLeak"/>
 					<li Class = "Vehicles.Reactor_Explosive">
@@ -301,7 +284,6 @@
 						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
-				
 				<hitbox>
 					<cells>
 						<li>(0, -1)</li>
@@ -309,7 +291,6 @@
 					</cells>
 				</hitbox>
 			</li>
-			
 			<li>
 				<key>RearBumper</key>
 				<label>Rear Bumper</label>
@@ -326,18 +307,13 @@
 				<health>30</health>
 				<depth>Internal</depth>
 			</li>
-			
 			<li>
 				<key>SteeringWheel</key>
 				<label>Steering Lever</label>
 				<health>20</health>
 				<depth>Internal</depth>
 			</li>
-			
 		</components>
-		
-		
-		
 		<comps>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
