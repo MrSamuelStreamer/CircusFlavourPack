@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs</xpath>
+		<value>
+			<VBE.BackgroundImageDef>
+				<label>Big Top</label>
+				<description>A generic and royalty free big top. (Source: Adobe Stock)</description>
+				<defName>MSS_BigTop</defName>
+				<path>Textures/BigTop</path>
+			</VBE.BackgroundImageDef>
+		</value>
+	</Operation>
+</Patch>
