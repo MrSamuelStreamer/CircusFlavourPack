@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <Burn.label>ouchie</Burn.label>
+    <ElectricalBurn.label>sparkling ouchie</ElectricalBurn.label>
+    <ChemicalBurn.label>spicy ouchie</ChemicalBurn.label>
+    <Crush.label>booboo</Crush.label>
+    <Crack.label>big booboo</Crack.label>
+    <Cut.label>oopsie</Cut.label>
+    <SurgicalCut.label>oopsie on purpose</SurgicalCut.label>
+    <ExecutionCut.label>naughty oopsie</ExecutionCut.label>
+    <Frostbite.label>chilly oopsie</Frostbite.label>
+    <AcidBurn.label>spicy oopsie</AcidBurn.label>
+    <Decayed.label>stinky</Decayed.label>
+    <Scratch.label>scritchy</Scratch.label>
+    <Bite.label>chompie</Bite.label>
+    <Stab.label>pokey owie</Stab.label>
+    <Gunshot.label>bang-bang booboo</Gunshot.label>
+    <Shredded.label>confetti'd</Shredded.label>
+    <Bruise.label>boop mark</Bruise.label>
+    <BeamWound.label>zippidy zappy zap</BeamWound.label>
+    <Misc.label>owie</Misc.label>
+    <MissingBodyPart.label>whoopsie gone</MissingBodyPart.label>
+    <PorcupineQuill.label>pointy friend</PorcupineQuill.label>
+    <VacuumBurn.label>space ouchie</VacuumBurn.label>
+    <Digested.label>tummy hug</Digested.label>
+    <EnergyBolt.label>bzzt owie</EnergyBolt.label>
+    <PsychicInjury.label>brain ouchie</PsychicInjury.label>
+    <PsychicInjurySkin.label>spooky ouchie</PsychicInjurySkin.label>
+
+
+</LanguageData>
