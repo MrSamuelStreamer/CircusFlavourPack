@@ -15,7 +15,7 @@ public class CircusFlavourPackMod : Mod
         Harmony.DEBUG = true;
 #endif
         Harmony harmony = new Harmony("MrSamuelStreamer.rimworld.CircusFlavourPack.main");
-        harmony.PatchAll();
+        harmony.PatchAll(typeof(CircusFlavourPackMod).Assembly);
     }
 
     public override void DoSettingsWindowContents(Rect inRect)
