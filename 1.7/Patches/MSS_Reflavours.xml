@@ -27,7 +27,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Silver"]/graphicData/texPath</xpath>
         <value>
-            <texPath>tickets/tickets</texPath>
+            <texPath>Things/tickets</texPath>
         </value>
     </Operation>
 </Patch>
