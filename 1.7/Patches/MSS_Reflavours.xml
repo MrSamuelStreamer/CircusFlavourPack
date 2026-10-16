@@ -24,4 +24,10 @@
             <Flammability>1</Flammability>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Silver"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>tickets/tickets</texPath>
+        </value>
+    </Operation>
 </Patch>
