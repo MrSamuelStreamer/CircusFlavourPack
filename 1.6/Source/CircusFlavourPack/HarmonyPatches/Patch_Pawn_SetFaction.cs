@@ -8,6 +8,7 @@ namespace CircusFlavourPack.HarmonyPatches;
 /// <summary>
 /// Swaps a pawn's xenotype when it joins the player faction as a colonist.
 /// Recruiting, wanderers, rescued refugees, quest joiners, taming and the debug recruit action all end in SetFaction.
+/// Slaves are skipped here and swapped when freed, see Patch_PawnGuestTracker_SetGuestStatus.
 /// </summary>
 [HarmonyPatch(typeof(Pawn), nameof(Pawn.SetFaction))]
 public static class Patch_Pawn_SetFaction
@@ -21,30 +22,35 @@ public static class Patch_Pawn_SetFaction
     [HarmonyPostfix]
     public static void Postfix(Pawn __instance, Faction newFaction, Faction __state)
     {
-        if (!IsColonistJoin(__instance, __state, newFaction))
+        if (newFaction == null || newFaction != Faction.OfPlayerSilentFail || __state == newFaction)
+            return;
+        // Enslavement calls SetFaction before the Slave status is set; freed slaves are handled by the SetGuestStatus patch.
+        if (PawnGenerator.IsBeingGenerated(__instance) || Patch_PawnGuestTracker_SetGuestStatus.Enslaving)
+            return;
+
+        ApplyJoinXenotype(__instance, newFaction);
+    }
+
+    /// <summary>Swaps the pawn to the configured xenotype if the setting is on and the pawn is eligible.</summary>
+    internal static void ApplyJoinXenotype(Pawn pawn, Faction faction)
+    {
+        if (!CircusFlavourPackMod.settings.xenotypeOnJoinEnabled || !ModsConfig.BiotechActive)
+            return;
+        // Skips scenario setup, and the new-colony/Archonexus restart dialog, which reassigns colonists while the game is playing.
+        if (Current.ProgramState != ProgramState.Playing || Find.WindowStack.IsOpen<Dialog_ConfigureIdeo>())
+            return;
+        // Lodgers leave again but a xenotype swap would stay.
+        if (!pawn.RaceProps.Humanlike || pawn.IsQuestLodger())
             return;
 
         XenotypeDef xenotype = CircusFlavourPackMod.settings.JoinXenotype;
-        if (xenotype == null || !IsEligiblePawn(__instance) || __instance.genes.Xenotype == xenotype)
+        if (xenotype == null || !IsEligiblePawn(pawn) || pawn.genes.Xenotype == xenotype)
             return;
 
-        __instance.genes.SetXenotype(xenotype);
+        pawn.genes.SetXenotype(xenotype);
         Messages.Message(
-            "MSS_CFP_XenotypeChangedOnJoin".Translate(__instance.Named("PAWN"), newFaction.Name.Named("FACTION"), xenotype.LabelCap.Named("XENOTYPE")),
-            __instance, MessageTypeDefOf.NeutralEvent);
-    }
-
-    private static bool IsColonistJoin(Pawn pawn, Faction oldFaction, Faction newFaction)
-    {
-        if (!CircusFlavourPackMod.settings.xenotypeOnJoinEnabled || !ModsConfig.BiotechActive)
-            return false;
-        // Skips scenario setup, and the new-colony/Archonexus restart dialog, which reassigns colonists while the game is playing.
-        if (Current.ProgramState != ProgramState.Playing || Find.WindowStack.IsOpen<Dialog_ConfigureIdeo>())
-            return false;
-        if (newFaction == null || newFaction != Faction.OfPlayerSilentFail || oldFaction == newFaction || PawnGenerator.IsBeingGenerated(pawn))
-            return false;
-        // Lodgers leave again but a xenotype swap would stay; slaves are excluded by choice.
-        return pawn.RaceProps.Humanlike && !pawn.IsQuestLodger() && !Patch_PawnGuestTracker_SetGuestStatus.Enslaving;
+            "MSS_CFP_XenotypeChangedOnJoin".Translate(pawn.Named("PAWN"), faction.Name.Named("FACTION"), xenotype.LabelCap.Named("XENOTYPE")),
+            pawn, MessageTypeDefOf.NeutralEvent);
     }
 
     private static bool IsEligiblePawn(Pawn pawn)
