@@ -8,23 +8,23 @@ namespace CircusFlavourPack;
 
 public class Settings : ModSettings
 {
-    /// <summary>Swap a pawn's xenotype when it converts to the player faction's primary ideoligion.</summary>
-    public bool xenotypeOnConversionEnabled = false;
+    /// <summary>Swap a pawn's xenotype when it joins the player faction as a colonist.</summary>
+    public bool xenotypeOnJoinEnabled = false;
 
-    /// <summary>defName of the XenotypeDef applied on conversion. Only non-inheritable xenotypes are allowed.</summary>
-    public string conversionXenotypeDefName;
+    /// <summary>defName of the XenotypeDef applied on joining. Only non-inheritable xenotypes are allowed.</summary>
+    public string joinXenotypeDefName;
 
     /// <summary>
     /// The configured xenotype, or null when unset, no longer loaded, or inheritable.
     /// Inheritable xenotypes are rejected because SetXenotype only clears xenogenes, so germline genes would stack on the pawn's endogenes.
     /// </summary>
-    public XenotypeDef ConversionXenotype
+    public XenotypeDef JoinXenotype
     {
         get
         {
-            if (conversionXenotypeDefName.NullOrEmpty())
+            if (joinXenotypeDefName.NullOrEmpty())
                 return null;
-            XenotypeDef def = DefDatabase<XenotypeDef>.GetNamedSilentFail(conversionXenotypeDefName);
+            XenotypeDef def = DefDatabase<XenotypeDef>.GetNamedSilentFail(joinXenotypeDefName);
             return def is { inheritable: false } ? def : null;
         }
     }
@@ -35,13 +35,13 @@ public class Settings : ModSettings
         options.Begin(wrect);
 
         options.CheckboxLabeled(
-            "MSS_CFP_Settings_XenotypeOnConversion".Translate(), ref xenotypeOnConversionEnabled,
-            "MSS_CFP_Settings_XenotypeOnConversion_Tooltip".Translate());
+            "MSS_CFP_Settings_XenotypeOnJoin".Translate(), ref xenotypeOnJoinEnabled,
+            "MSS_CFP_Settings_XenotypeOnJoin_Tooltip".Translate());
         options.Gap();
 
         if (options.ButtonTextLabeled(
-                "MSS_CFP_Settings_ConversionXenotype".Translate(), CurrentXenotypeLabel(),
-                tooltip: "MSS_CFP_Settings_ConversionXenotype_Tooltip".Translate()))
+                "MSS_CFP_Settings_JoinXenotype".Translate(), CurrentXenotypeLabel(),
+                tooltip: "MSS_CFP_Settings_JoinXenotype_Tooltip".Translate()))
             Find.WindowStack.Add(new FloatMenu(XenotypeOptions()));
 
         options.End();
@@ -49,11 +49,11 @@ public class Settings : ModSettings
 
     private string CurrentXenotypeLabel()
     {
-        if (conversionXenotypeDefName.NullOrEmpty())
+        if (joinXenotypeDefName.NullOrEmpty())
             return "MSS_CFP_Settings_XenotypeNone".Translate();
-        XenotypeDef def = DefDatabase<XenotypeDef>.GetNamedSilentFail(conversionXenotypeDefName);
+        XenotypeDef def = DefDatabase<XenotypeDef>.GetNamedSilentFail(joinXenotypeDefName);
         if (def == null)
-            return "MSS_CFP_Settings_XenotypeMissing".Translate(conversionXenotypeDefName);
+            return "MSS_CFP_Settings_XenotypeMissing".Translate(joinXenotypeDefName);
         if (def.inheritable)
             return "MSS_CFP_Settings_XenotypeInheritable".Translate(def.LabelCap);
         return def.LabelCap;
@@ -61,17 +61,18 @@ public class Settings : ModSettings
 
     private List<FloatMenuOption> XenotypeOptions()
     {
-        List<FloatMenuOption> list = [new("MSS_CFP_Settings_XenotypeNone".Translate(), () => conversionXenotypeDefName = null)];
+        List<FloatMenuOption> list = [new("MSS_CFP_Settings_XenotypeNone".Translate(), () => joinXenotypeDefName = null)];
         list.AddRange(DefDatabase<XenotypeDef>.AllDefsListForReading
             .Where(def => !def.inheritable)
             .OrderBy(def => def.label)
-            .Select(def => new FloatMenuOption(def.LabelCap, () => conversionXenotypeDefName = def.defName, def.Icon, Color.white)));
+            .Select(def => new FloatMenuOption(def.LabelCap, () => joinXenotypeDefName = def.defName, def.Icon, Color.white)));
         return list;
     }
 
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref xenotypeOnConversionEnabled, "xenotypeOnConversionEnabled", false);
-        Scribe_Values.Look(ref conversionXenotypeDefName, "conversionXenotypeDefName");
+        // Save keys keep the old "conversion" names so existing settings files still load.
+        Scribe_Values.Look(ref xenotypeOnJoinEnabled, "xenotypeOnConversionEnabled", false);
+        Scribe_Values.Look(ref joinXenotypeDefName, "conversionXenotypeDefName");
     }
 }
