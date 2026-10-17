@@ -12,4 +12,15 @@
     <MSS_CFP_Settings_XenotypeInheritable>(inheritable, not used: {0})</MSS_CFP_Settings_XenotypeInheritable>
 
     <MSS_CFP_XenotypeChangedOnConversion>{PAWN_labelShort} has converted to {IDEO} and is now a {XENOTYPE}.</MSS_CFP_XenotypeChangedOnConversion>
+
+    <KAU_NoKill>Cannot pie</KAU_NoKill>
+    <KAU_Kill>Pie {0} [{1}]</KAU_Kill>
+    <KAU_StripKill>Strip, then pie {0} [{1}]</KAU_StripKill>
+    <KUA_ToggleFinishOff>Pie them</KUA_ToggleFinishOff>
+    <KUA_ToggleFinishOffDesc>Toggle pieing</KUA_ToggleFinishOffDesc>
+    <KUA_ToggleFinishOffDisable>Cancel pieing</KUA_ToggleFinishOffDisable>
+    <KUA_ToggleFinishOffDisableDesc>Cancel pieing</KUA_ToggleFinishOffDisableDesc>
+    <KAU_ToggleFinishOff>Disable pieing entirely</KAU_ToggleFinishOff>
+    <KAU_ToggleAllowFinishOffOnFriendly>Allow pieing on friendly pawns</KAU_ToggleAllowFinishOffOnFriendly>
+    <KAU_DisableMeleeRequirementForFinishOff>Disable Melee requirement for pieing</KAU_DisableMeleeRequirementForFinishOff>
 </LanguageData>
