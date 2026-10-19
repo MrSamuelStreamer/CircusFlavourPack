@@ -6,7 +6,7 @@
     <description>Clownkin were created by manipulating Sanguophage genelines to act as the perfect entertainers, court jesters, and bards for bored Glitterworld aristocracy. Though the experiments were successful, and the Clownkin became jolly, happy-go-lucky, fools, their bloodfeeding nature was not fully supressed, and occasionally the clownkin are believed to break into a bloody frenzy, outright devouring their targets.</description>
     <descriptionShort>A sanguophage offshoot designed to be jolly and joyous, with a dark underside.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon53</iconPath>
-    <inheritable>true</inheritable>
+    <inheritable>false</inheritable>
     <genes>
       <li>ArchiteMetabolism</li>
       <li>DiseaseFree</li>
