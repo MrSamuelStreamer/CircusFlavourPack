@@ -2,31 +2,146 @@
 <LanguageData>
 
     <Burn.label>ouchie</Burn.label>
-    <ElectricalBurn.label>sparkling ouchie</ElectricalBurn.label>
-    <ChemicalBurn.label>spicy ouchie</ChemicalBurn.label>
-    <Crush.label>booboo</Crush.label>
-    <Crack.label>big booboo</Crack.label>
-    <Cut.label>oopsie</Cut.label>
-    <SurgicalCut.label>oopsie on purpose</SurgicalCut.label>
-    <ExecutionCut.label>naughty oopsie</ExecutionCut.label>
-    <Frostbite.label>chilly oopsie</Frostbite.label>
-    <AcidBurn.label>spicy oopsie</AcidBurn.label>
-    <Decayed.label>stinky</Decayed.label>
-    <Scratch.label>scritchy</Scratch.label>
-    <Bite.label>chompie</Bite.label>
-    <Stab.label>pokey owie</Stab.label>
-    <Gunshot.label>bang-bang booboo</Gunshot.label>
-    <Shredded.label>confetti'd</Shredded.label>
-    <Bruise.label>boop mark</Bruise.label>
-    <BeamWound.label>zippidy zappy zap</BeamWound.label>
-    <Misc.label>owie</Misc.label>
-    <MissingBodyPart.label>whoopsie gone</MissingBodyPart.label>
-    <PorcupineQuill.label>pointy friend</PorcupineQuill.label>
-    <VacuumBurn.label>space ouchie</VacuumBurn.label>
-    <Digested.label>tummy hug</Digested.label>
-    <EnergyBolt.label>bzzt owie</EnergyBolt.label>
-    <PsychicInjury.label>brain ouchie</PsychicInjury.label>
-    <PsychicInjurySkin.label>spooky ouchie</PsychicInjurySkin.label>
+    <Burn.comps.HediffComp_TendDuration.labelTendedWell>stickered</Burn.comps.HediffComp_TendDuration.labelTendedWell>
+    <Burn.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</Burn.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Burn.comps.HediffComp_TendDuration.labelSolidTendedWell>kissed better</Burn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Burn.comps.HediffComp_GetsPermanent.permanentLabel>ouchie forever</Burn.comps.HediffComp_GetsPermanent.permanentLabel>
 
+    <ElectricalBurn.label>sparkling ouchie</ElectricalBurn.label>
+    <ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWell>stickered</ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWell>
+    <ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <ElectricalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>kissed better</ElectricalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <ElectricalBurn.comps.HediffComp_GetsPermanent.permanentLabel>sparkly forever</ElectricalBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <ChemicalBurn.label>spicy ouchie</ChemicalBurn.label>
+    <ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWell>stickered</ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWell>
+    <ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <ChemicalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>kissed better</ChemicalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <ChemicalBurn.comps.HediffComp_GetsPermanent.permanentLabel>spicy forever</ChemicalBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Crush.label>booboo</Crush.label>
+    <Crush.comps.HediffComp_TendDuration.labelTendedWell>stickered</Crush.comps.HediffComp_TendDuration.labelTendedWell>
+    <Crush.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Crush.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Crush.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Crush.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Crush.comps.HediffComp_GetsPermanent.permanentLabel>squished forever</Crush.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Crack.label>big booboo</Crack.label>
+    <Crack.comps.HediffComp_TendDuration.labelTendedWell>propped up</Crack.comps.HediffComp_TendDuration.labelTendedWell>
+    <Crack.comps.HediffComp_TendDuration.labelTendedWellInner>propped up</Crack.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Crack.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Crack.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Crack.comps.HediffComp_GetsPermanent.permanentLabel>wonky bit</Crack.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Cut.label>oopsie</Cut.label>
+    <Cut.comps.HediffComp_TendDuration.labelTendedWell>stickered</Cut.comps.HediffComp_TendDuration.labelTendedWell>
+    <Cut.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Cut.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Cut.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Cut.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Cut.comps.HediffComp_GetsPermanent.permanentLabel>oopsie line</Cut.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <SurgicalCut.label>oopsie on purpose</SurgicalCut.label>
+    <SurgicalCut.comps.HediffComp_TendDuration.labelTendedWell>stickered</SurgicalCut.comps.HediffComp_TendDuration.labelTendedWell>
+    <SurgicalCut.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</SurgicalCut.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <SurgicalCut.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</SurgicalCut.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <SurgicalCut.comps.HediffComp_GetsPermanent.permanentLabel>planned oopsie line</SurgicalCut.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <ExecutionCut.label>naughty oopsie</ExecutionCut.label>
+
+    <Frostbite.label>chilly oopsie</Frostbite.label>
+    <Frostbite.comps.HediffComp_TendDuration.labelTendedWell>stickered</Frostbite.comps.HediffComp_TendDuration.labelTendedWell>
+    <Frostbite.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</Frostbite.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Frostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>kissed better</Frostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>chilly forever</Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <AcidBurn.label>spicy oopsie</AcidBurn.label>
+    <AcidBurn.comps.HediffComp_TendDuration.labelTendedWell>stickered</AcidBurn.comps.HediffComp_TendDuration.labelTendedWell>
+    <AcidBurn.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</AcidBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <AcidBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>kissed better</AcidBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>tangy forever</AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Decayed.label>stinky</Decayed.label>
+
+    <Scratch.label>scritchy</Scratch.label>
+    <Scratch.comps.HediffComp_TendDuration.labelTendedWell>stickered</Scratch.comps.HediffComp_TendDuration.labelTendedWell>
+    <Scratch.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Scratch.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Scratch.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Scratch.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Scratch.comps.HediffComp_GetsPermanent.permanentLabel>scritchy line</Scratch.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Bite.label>chompie</Bite.label>
+    <Bite.comps.HediffComp_TendDuration.labelTendedWell>stickered</Bite.comps.HediffComp_TendDuration.labelTendedWell>
+    <Bite.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Bite.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Bite.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Bite.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Bite.comps.HediffComp_GetsPermanent.permanentLabel>chompie mark</Bite.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Stab.label>pokey owie</Stab.label>
+    <Stab.comps.HediffComp_TendDuration.labelTendedWell>stickered</Stab.comps.HediffComp_TendDuration.labelTendedWell>
+    <Stab.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Stab.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Stab.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Stab.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Stab.comps.HediffComp_GetsPermanent.permanentLabel>pokey dot</Stab.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Gunshot.label>bang-bang booboo</Gunshot.label>
+    <Gunshot.comps.HediffComp_TendDuration.labelTendedWell>stickered</Gunshot.comps.HediffComp_TendDuration.labelTendedWell>
+    <Gunshot.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Gunshot.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Gunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Gunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>old bang-bang</Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>
+    <Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>bang-bang forever</Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+
+    <Shredded.label>confetti'd</Shredded.label>
+    <Shredded.comps.HediffComp_TendDuration.labelTendedWell>stickered</Shredded.comps.HediffComp_TendDuration.labelTendedWell>
+    <Shredded.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Shredded.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Shredded.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Shredded.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Shredded.comps.HediffComp_GetsPermanent.permanentLabel>confetti forever</Shredded.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <Bruise.label>boop mark</Bruise.label>
+    <Bruise.comps.HediffComp_TendDuration.labelTendedWell>stickered</Bruise.comps.HediffComp_TendDuration.labelTendedWell>
+    <Bruise.comps.HediffComp_TendDuration.labelTendedWellInner>kissed better</Bruise.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Bruise.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Bruise.comps.HediffComp_TendDuration.labelSolidTendedWell>
+
+    <BeamWound.label>zippidy zappy zap</BeamWound.label>
+    <BeamWound.comps.HediffComp_TendDuration.labelTendedWell>stickered</BeamWound.comps.HediffComp_TendDuration.labelTendedWell>
+    <BeamWound.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</BeamWound.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <BeamWound.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</BeamWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>old zap</BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>
+    <BeamWound.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>zap forever</BeamWound.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+
+    <Misc.label>owie</Misc.label>
+    <Misc.comps.HediffComp_TendDuration.labelTendedWell>stickered</Misc.comps.HediffComp_TendDuration.labelTendedWell>
+    <Misc.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</Misc.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <Misc.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</Misc.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <Misc.comps.HediffComp_GetsPermanent.permanentLabel>owie forever</Misc.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <MissingBodyPart.label>whoopsie gone</MissingBodyPart.label>
+
+    <PorcupineQuill.label>pointy friend</PorcupineQuill.label>
+
+    <VacuumBurn.label>space ouchie</VacuumBurn.label>
+    <VacuumBurn.comps.HediffComp_TendDuration.labelTendedWell>fussed over</VacuumBurn.comps.HediffComp_TendDuration.labelTendedWell>
+    <VacuumBurn.comps.HediffComp_TendDuration.labelTendedWellInner>fussed over</VacuumBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <VacuumBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>fussed over</VacuumBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+
+    <Digested.label>tummy hug</Digested.label>
+
+    <EnergyBolt.label>bzzt owie</EnergyBolt.label>
+    <EnergyBolt.comps.HediffComp_TendDuration.labelTendedWell>stickered</EnergyBolt.comps.HediffComp_TendDuration.labelTendedWell>
+    <EnergyBolt.comps.HediffComp_TendDuration.labelTendedWellInner>stitchy</EnergyBolt.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <EnergyBolt.comps.HediffComp_TendDuration.labelSolidTendedWell>propped up</EnergyBolt.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <EnergyBolt.comps.HediffComp_GetsPermanent.permanentLabel>old bzzt</EnergyBolt.comps.HediffComp_GetsPermanent.permanentLabel>
+    <EnergyBolt.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>bzzt forever</EnergyBolt.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+
+    <PsychicInjury.label>brain ouchie</PsychicInjury.label>
+    <PsychicInjury.comps.HediffComp_TendDuration.labelTendedWell>fussed over</PsychicInjury.comps.HediffComp_TendDuration.labelTendedWell>
+    <PsychicInjury.comps.HediffComp_TendDuration.labelTendedWellInner>fussed over</PsychicInjury.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <PsychicInjury.comps.HediffComp_TendDuration.labelSolidTendedWell>fussed over</PsychicInjury.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <PsychicInjury.comps.HediffComp_GetsPermanent.permanentLabel>brain smoothed</PsychicInjury.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <PsychicInjurySkin.label>spooky ouchie</PsychicInjurySkin.label>
+    <PsychicInjurySkin.comps.HediffComp_TendDuration.labelTendedWell>stickered</PsychicInjurySkin.comps.HediffComp_TendDuration.labelTendedWell>
+    <PsychicInjurySkin.comps.HediffComp_TendDuration.labelTendedWellInner>tucked in</PsychicInjurySkin.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <PsychicInjurySkin.comps.HediffComp_TendDuration.labelSolidTendedWell>fussed over</PsychicInjurySkin.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <PsychicInjurySkin.comps.HediffComp_GetsPermanent.permanentLabel>spooky forever</PsychicInjurySkin.comps.HediffComp_GetsPermanent.permanentLabel>
+
+    <PsychicInjurySolid.label>big brain ouchie</PsychicInjurySolid.label>
+    <PsychicInjurySolid.comps.HediffComp_TendDuration.labelTendedWell>fussed over</PsychicInjurySolid.comps.HediffComp_TendDuration.labelTendedWell>
+    <PsychicInjurySolid.comps.HediffComp_TendDuration.labelTendedWellInner>fussed over</PsychicInjurySolid.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <PsychicInjurySolid.comps.HediffComp_TendDuration.labelSolidTendedWell>fussed over</PsychicInjurySolid.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <PsychicInjurySolid.comps.HediffComp_GetsPermanent.permanentLabel>big brain forever</PsychicInjurySolid.comps.HediffComp_GetsPermanent.permanentLabel>
 
 </LanguageData>

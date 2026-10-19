@@ -2,14 +2,25 @@
 <LanguageData>
     <MSS_CFP_SettingsCategory>Circus Flavour Pack</MSS_CFP_SettingsCategory>
 
-    <MSS_CFP_Settings_XenotypeOnConversion>Change xenotype on conversion</MSS_CFP_Settings_XenotypeOnConversion>
-    <MSS_CFP_Settings_XenotypeOnConversion_Tooltip>When a pawn converts to your faction's primary ideoligion during play, replace their xenotype with the one chosen below. Starting colonists and newly generated pawns are not affected. Needs Ideology and Biotech.</MSS_CFP_Settings_XenotypeOnConversion_Tooltip>
+    <MSS_CFP_Settings_XenotypeOnJoin>Change xenotype when a pawn joins</MSS_CFP_Settings_XenotypeOnJoin>
+    <MSS_CFP_Settings_XenotypeOnJoin_Tooltip>When a pawn joins your faction as a colonist during play, replace their xenotype with the one chosen below. Slaves are not affected until they are freed. Temporary guests, starting colonists and newborns are not affected. Needs Biotech.</MSS_CFP_Settings_XenotypeOnJoin_Tooltip>
 
-    <MSS_CFP_Settings_ConversionXenotype>Xenotype on conversion</MSS_CFP_Settings_ConversionXenotype>
-    <MSS_CFP_Settings_ConversionXenotype_Tooltip>Only xenogene (non-inheritable) xenotypes can be chosen. The pawn's current xenogenes are replaced; their endogenes stay.</MSS_CFP_Settings_ConversionXenotype_Tooltip>
+    <MSS_CFP_Settings_JoinXenotype>Xenotype on joining</MSS_CFP_Settings_JoinXenotype>
+    <MSS_CFP_Settings_JoinXenotype_Tooltip>Only xenogene (non-inheritable) xenotypes can be chosen. The pawn's current xenogenes are replaced; their endogenes stay.</MSS_CFP_Settings_JoinXenotype_Tooltip>
     <MSS_CFP_Settings_XenotypeNone>(none)</MSS_CFP_Settings_XenotypeNone>
     <MSS_CFP_Settings_XenotypeMissing>(missing: {0})</MSS_CFP_Settings_XenotypeMissing>
     <MSS_CFP_Settings_XenotypeInheritable>(inheritable, not used: {0})</MSS_CFP_Settings_XenotypeInheritable>
 
-    <MSS_CFP_XenotypeChangedOnConversion>{PAWN_labelShort} has converted to {IDEO} and is now a {XENOTYPE}.</MSS_CFP_XenotypeChangedOnConversion>
+    <MSS_CFP_XenotypeChangedOnJoin>{PAWN_labelShort} has joined {FACTION} and is now a {XENOTYPE}.</MSS_CFP_XenotypeChangedOnJoin>
+
+    <KAU_NoKill>Cannot pie</KAU_NoKill>
+    <KAU_Kill>Pie {0} [{1}]</KAU_Kill>
+    <KAU_StripKill>Strip, then pie {0} [{1}]</KAU_StripKill>
+    <KUA_ToggleFinishOff>Pie them</KUA_ToggleFinishOff>
+    <KUA_ToggleFinishOffDesc>Toggle pieing</KUA_ToggleFinishOffDesc>
+    <KUA_ToggleFinishOffDisable>Cancel pieing</KUA_ToggleFinishOffDisable>
+    <KUA_ToggleFinishOffDisableDesc>Cancel pieing</KUA_ToggleFinishOffDisableDesc>
+    <KAU_ToggleFinishOff>Disable pieing entirely</KAU_ToggleFinishOff>
+    <KAU_ToggleAllowFinishOffOnFriendly>Allow pieing on friendly pawns</KAU_ToggleAllowFinishOffOnFriendly>
+    <KAU_DisableMeleeRequirementForFinishOff>Disable Melee requirement for pieing</KAU_DisableMeleeRequirementForFinishOff>
 </LanguageData>
