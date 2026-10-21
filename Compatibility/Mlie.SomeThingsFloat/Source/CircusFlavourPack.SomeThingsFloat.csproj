@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>Library</OutputType>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>CircusFlavourPack</RootNamespace>
+        <AssemblyName>CircusFlavourPack_SomeThingsFloat</AssemblyName>
+        <OutputPath>../1.6/Assemblies/</OutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <Optimize>false</Optimize>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    <PropertyGroup>
+        <RimWorldManaged Condition="Exists('../../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../../RimWorldWin64_Data/Managed</RimWorldManaged>
+        <RimWorldManaged Condition="'$(RimWorldManaged)' == '' AND Exists('../../../../../RimWorldLinux_Data/Managed/Assembly-CSharp.dll')">../../../../../RimWorldLinux_Data/Managed</RimWorldManaged>
+        <RimWorldManaged Condition="'$(RimWorldManaged)' == '' AND Exists('../../../../../Contents/Resources/Data/Managed/Assembly-CSharp.dll')">../../../../../Contents/Resources/Data/Managed</RimWorldManaged>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(RimWorldManaged)' != ''">
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(RimWorldManaged)/Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(RimWorldManaged)/UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+            <HintPath>$(RimWorldManaged)/UnityEngine.IMGUIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup Condition="'$(RimWorldManaged)' == ''">
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6-*" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="SomeThingsFloat">
+            <HintPath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2940072380\1.6\Assemblies\SomeThingsFloat.dll')">C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2940072380\1.6\Assemblies\SomeThingsFloat.dll</HintPath>
+            <HintPath Condition="Exists('../../../../../../../workshop/content/294100/2940072380/1.6/Assemblies/SomeThingsFloat.dll')">../../../../../../../workshop/content/294100/2940072380/1.6/Assemblies/SomeThingsFloat.dll</HintPath>
+            <HintPath Condition="Exists('D:\SteamLibrary\steamapps\workshop\content\294100\2940072380\1.6\Assemblies\SomeThingsFloat.dll')">D:\SteamLibrary\steamapps\workshop\content\294100\2940072380\1.6\Assemblies\SomeThingsFloat.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime" />
+    </ItemGroup>
+</Project>
