@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Wire up the unused Samuel table and the circus spawns. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables</xpath>
+    <value>
+      <BS_RR_SamuelStreamer>0.3</BS_RR_SamuelStreamer>
+      <CFP_RR_CircusSpawns>0.2</CFP_RR_CircusSpawns>
+    </value>
+  </Operation>
+
+  <!-- Make the wild outcomes more common. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables/BS_RR_FuseOutcomes</xpath>
+    <value>
+      <BS_RR_FuseOutcomes>0.25</BS_RR_FuseOutcomes>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables/BS_RR_TransformToTable</xpath>
+    <value>
+      <BS_RR_TransformToTable>0.2</BS_RR_TransformToTable>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables/BS_RR_DeadlifeDust</xpath>
+    <value>
+      <BS_RR_DeadlifeDust>0.5</BS_RR_DeadlifeDust>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables/BS_RR_SpawnDucks</xpath>
+    <value>
+      <BS_RR_SpawnDucks>0.2</BS_RR_SpawnDucks>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BS_RandyRayAffliction"]/modExtensions/li[@Class="BigAndSmall.ModExtension_RandomEventProps"]/eventTables/BS_RR_SpawnAnimals</xpath>
+    <value>
+      <BS_RR_SpawnAnimals>0.15</BS_RR_SpawnAnimals>
+    </value>
+  </Operation>
+
+  <!-- Randy weapon traits (Odyssey only) turn up more often. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WeaponTraitDef[defName="BS_RandyRayExtra"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WeaponTraitDef[defName="BS_RandyRayExtra"]/commonality</xpath>
+      <value>
+        <commonality>5</commonality>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WeaponTraitDef[defName="BS_RandyRayExtraPlusUltra"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WeaponTraitDef[defName="BS_RandyRayExtraPlusUltra"]/commonality</xpath>
+      <value>
+        <commonality>5</commonality>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

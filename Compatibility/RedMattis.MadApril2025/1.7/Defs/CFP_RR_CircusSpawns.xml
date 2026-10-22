@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BigAndSmall.RandomEventTable>
+    <defName>CFP_RR_CircusSpawns</defName>
+    <chanceToBeAoe>0</chanceToBeAoe>
+    <eventTriggers>
+      <CFP_RR_SpawnJorises>1</CFP_RR_SpawnJorises>
+      <CFP_RR_SpawnJorisesManhunter>0.4</CFP_RR_SpawnJorisesManhunter>
+      <CFP_RR_SpawnElephantsManhunter>0.3</CFP_RR_SpawnElephantsManhunter>
+      <CFP_RR_SpawnFrogges>1</CFP_RR_SpawnFrogges>
+      <CFP_RR_SpawnRavensManhunter>0.5</CFP_RR_SpawnRavensManhunter>
+      <CFP_RR_SpawnMimes>0.5</CFP_RR_SpawnMimes>
+    </eventTriggers>
+  </BigAndSmall.RandomEventTable>
+
+  <!-- Joris is a polar bear, see the AG_JorisAffinity gene. -->
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnJorises</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKinds>
+      <li>Bear_Polar</li><li>Bear_Polar</li><li>Bear_Polar</li><li>Bear_Polar</li>
+    </spawnKinds>
+  </BigAndSmall.EventOutcome>
+
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnJorisesManhunter</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKindsManhunter>
+      <li>Bear_Polar</li><li>Bear_Polar</li><li>Bear_Polar</li>
+    </spawnKindsManhunter>
+  </BigAndSmall.EventOutcome>
+
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnElephantsManhunter</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKindsManhunter>
+      <li>Elephant</li><li>Elephant</li><li>Elephant</li><li>Elephant</li>
+    </spawnKindsManhunter>
+  </BigAndSmall.EventOutcome>
+
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnFrogges</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKinds>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li><li MayRequire="MSS.FlavourPack">MSSFP_Frogge</li>
+    </spawnKinds>
+  </BigAndSmall.EventOutcome>
+
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnRavensManhunter</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKindsManhunter>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Raven</li><li MayRequire="MSS.FlavourPack">MSSFP_Raven</li>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Raven</li><li MayRequire="MSS.FlavourPack">MSSFP_Raven</li>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Raven</li><li MayRequire="MSS.FlavourPack">MSSFP_Raven</li>
+      <li MayRequire="MSS.FlavourPack">MSSFP_Raven</li><li MayRequire="MSS.FlavourPack">MSSFP_Raven</li>
+    </spawnKindsManhunter>
+  </BigAndSmall.EventOutcome>
+
+  <BigAndSmall.EventOutcome ParentName="BS_RR_EmpBig">
+    <defName>CFP_RR_SpawnMimes</defName>
+    <failOnNonhumanlike>false</failOnNonhumanlike>
+    <spawnKinds>
+      <li MayRequire="sarg.alphaanimals">AA_Mime</li><li MayRequire="sarg.alphaanimals">AA_Mime</li>
+      <li MayRequire="sarg.alphaanimals">AA_Mime</li><li MayRequire="sarg.alphaanimals">AA_Mime</li>
+      <li MayRequire="sarg.alphaanimals">AA_Mime</li><li MayRequire="sarg.alphaanimals">AA_Mime</li>
+    </spawnKinds>
+  </BigAndSmall.EventOutcome>
+
+</Defs>
