@@ -10,7 +10,6 @@
     <genes>
       <li>ArchiteMetabolism</li>
       <li>DiseaseFree</li>
-      <li MayRequire="mss.flavourpack">MSS_VoidsEmbrace</li>
       <li MayRequire="redmattis.bigsmall.core">Cannibal</li>
       <li MayRequire="redmattis.bigsmall.core">BS_FeedingFrenzy</li>
       <li MayRequire="redmattis.bigsmall.core">VU_Pounce</li>
