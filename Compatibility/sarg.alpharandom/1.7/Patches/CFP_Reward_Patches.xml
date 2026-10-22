@@ -78,11 +78,4 @@
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="WoodLog"]/label</xpath>
-    <value>
-      <label>stinkypoopoo</label>
-    </value>
-  </Operation>
-
 </Patch>

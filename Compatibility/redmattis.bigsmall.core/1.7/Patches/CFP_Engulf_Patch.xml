@@ -6,6 +6,12 @@
     <value>
       <relativeSizeThreshold>99~99</relativeSizeThreshold>
     </value>
-</Operation>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+      <xpath>Defs/AbilityDef[defName="BS_SnekEngulf_New"]/comps/li[@Class="BigAndSmall.CompProperties_AbilityEnglufJump"]/selfDamageMultiplier</xpath>
+      <value>
+        <selfDamageMultiplier>0.2</selfDamageMultiplier>
+      </value>
+  </Operation>
 
 </Patch>
