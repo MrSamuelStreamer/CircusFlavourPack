@@ -14,6 +14,9 @@ public class Settings : ModSettings
     /// <summary>defName of the XenotypeDef applied on joining. Only non-inheritable xenotypes are allowed.</summary>
     public string joinXenotypeDefName;
 
+    /// <summary>Chance that the "dark revelation" ritual reward unlocks other Anomaly research instead of a psychic ritual.</summary>
+    public float darkRevelationAnomalyChance = 0.25f;
+
     /// <summary>
     /// The configured xenotype, or null when unset, no longer loaded, or inheritable.
     /// Inheritable xenotypes are rejected because SetXenotype only clears xenogenes, so germline genes would stack on the pawn's endogenes.
@@ -43,6 +46,12 @@ public class Settings : ModSettings
                 "MSS_CFP_Settings_JoinXenotype".Translate(), CurrentXenotypeLabel(),
                 tooltip: "MSS_CFP_Settings_JoinXenotype_Tooltip".Translate()))
             Find.WindowStack.Add(new FloatMenu(XenotypeOptions()));
+        options.Gap();
+
+        options.Label(
+            "MSS_CFP_Settings_DarkRevelationChance".Translate(darkRevelationAnomalyChance.ToStringPercent()),
+            tooltip: "MSS_CFP_Settings_DarkRevelationChance_Tooltip".Translate());
+        darkRevelationAnomalyChance = options.Slider(darkRevelationAnomalyChance, 0f, 1f);
 
         options.End();
     }
@@ -74,5 +83,6 @@ public class Settings : ModSettings
         // Save keys keep the old "conversion" names so existing settings files still load.
         Scribe_Values.Look(ref xenotypeOnJoinEnabled, "xenotypeOnConversionEnabled", false);
         Scribe_Values.Look(ref joinXenotypeDefName, "conversionXenotypeDefName");
+        Scribe_Values.Look(ref darkRevelationAnomalyChance, "darkRevelationAnomalyChance", 0.25f);
     }
 }

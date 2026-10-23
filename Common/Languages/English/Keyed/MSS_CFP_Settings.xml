@@ -11,6 +11,11 @@
     <MSS_CFP_Settings_XenotypeMissing>(missing: {0})</MSS_CFP_Settings_XenotypeMissing>
     <MSS_CFP_Settings_XenotypeInheritable>(inheritable, not used: {0})</MSS_CFP_Settings_XenotypeInheritable>
 
+    <MSS_CFP_Settings_DarkRevelationChance>Dark revelation: chance of other Anomaly research instead of a psychic ritual: {0}</MSS_CFP_Settings_DarkRevelationChance>
+    <MSS_CFP_Settings_DarkRevelationChance_Tooltip>The "dark revelation" ritual reward normally unlocks the next psychic ritual. This is the chance it unlocks a different Anomaly research project instead. When every psychic ritual is known, it always unlocks other Anomaly research. Needs Ideology and Anomaly.</MSS_CFP_Settings_DarkRevelationChance_Tooltip>
+    <MSS_CFP_DarkRevelation_NeedsAnomaly>needs Anomaly</MSS_CFP_DarkRevelation_NeedsAnomaly>
+    <MSS_CFP_DarkRevelation_NothingLeft>no dark knowledge left to reveal</MSS_CFP_DarkRevelation_NothingLeft>
+
     <MSS_CFP_XenotypeChangedOnJoin>{PAWN_labelShort} has joined {FACTION} and is now a {XENOTYPE}.</MSS_CFP_XenotypeChangedOnJoin>
 
     <KAU_NoKill>Cannot pie</KAU_NoKill>

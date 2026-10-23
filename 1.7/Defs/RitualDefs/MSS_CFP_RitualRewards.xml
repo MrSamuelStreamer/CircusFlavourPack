@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issue #8: unlock Anomaly psychic rituals through Ideology rituals instead of entity study. -->
+  <RitualAttachableOutcomeEffectDef MayRequire="Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Anomaly">
+    <defName>MSS_CFP_DarkRevelation</defName>
+    <label>dark revelation</label>
+    <description>A psychic ritual will be revealed to your colony. Sometimes other dark knowledge is revealed instead.</description>
+    <effectDesc>a psychic ritual will be revealed to your colony (sometimes other dark knowledge instead).</effectDesc>
+    <letterInfoText>The void whispered: {0} is now known.</letterInfoText>
+    <workerClass>CircusFlavourPack.RitualAttachableOutcomeEffectWorker_DarkRevelation</workerClass>
+    <onlyPositiveOutcomes>true</onlyPositiveOutcomes>
+  </RitualAttachableOutcomeEffectDef>
+
+</Defs>
