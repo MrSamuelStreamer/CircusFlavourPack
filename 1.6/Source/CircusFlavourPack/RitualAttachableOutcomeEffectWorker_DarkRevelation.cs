@@ -10,6 +10,7 @@ namespace CircusFlavourPack;
 /// Prefers the next psychic ritual in the tree; has a configurable chance of other Anomaly research instead,
 /// and falls back to other Anomaly research once every psychic ritual is known.
 /// Only projects whose prerequisites are already done are picked, so FinishProject never chains unlocks.
+/// Entity codex discovery is bypassed on purpose: the reward unlocks research without needing to study the entity first.
 /// </summary>
 public class RitualAttachableOutcomeEffectWorker_DarkRevelation : RitualAttachableOutcomeEffectWorker
 {
@@ -17,6 +18,8 @@ public class RitualAttachableOutcomeEffectWorker_DarkRevelation : RitualAttachab
     {
         if (!ModsConfig.AnomalyActive)
             return "MSS_CFP_DarkRevelation_NeedsAnomaly".Translate();
+        if (Find.Anomaly.GenerateMonolith && Find.Anomaly.HighestLevelReached < 1)
+            return "MSS_CFP_DarkRevelation_MonolithDormant".Translate();
         if (!RitualPool().Any() && !AnomalyPool().Any())
             return "MSS_CFP_DarkRevelation_NothingLeft".Translate();
         return true;
@@ -31,7 +34,10 @@ public class RitualAttachableOutcomeEffectWorker_DarkRevelation : RitualAttachab
 
         ResearchProjectDef project = PickProject();
         if (project == null)
+        {
+            extraOutcomeDesc = "MSS_CFP_DarkRevelation_NothingRevealed".Translate();
             return;
+        }
 
         Find.ResearchManager.FinishProject(project, doCompletionLetter: false);
         extraOutcomeDesc = def.letterInfoText.Formatted(project.LabelCap).Resolve();
@@ -64,5 +70,12 @@ public class RitualAttachableOutcomeEffectWorker_DarkRevelation : RitualAttachab
             .Where(p => p.tab == ResearchTabDefOf.Anomaly && !ritualProjects.Contains(p) && IsNextAvailable(p));
     }
 
-    private static bool IsNextAvailable(ResearchProjectDef p) => !p.IsFinished && !p.IsHidden && p.PrerequisitesCompleted;
+    /// <summary>
+    /// Deliberately not ResearchProjectDef.IsHidden: that also hides projects whose entity codex entry is undiscovered,
+    /// which emptied the pools after the first unlock. Only the "monolith not yet activated" block is kept.
+    /// </summary>
+    private static bool IsNextAvailable(ResearchProjectDef p) => !p.IsFinished && p.PrerequisitesCompleted && MonolithAllows(p);
+
+    private static bool MonolithAllows(ResearchProjectDef p) =>
+        p.knowledgeCategory == null || !Find.Anomaly.GenerateMonolith || Find.Anomaly.HighestLevelReached >= 1;
 }
