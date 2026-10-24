@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef>
+    <defName>MSS_ClownDigestion</defName>
+    <label>Dessert Digestion</label>
+    <description>The carrier of this gene digests dessert meals in a very efficient way, similar to regular meals.</description>
+    <iconPath>UI/Gene/Gene_ClownDigestion</iconPath>
+  </GeneDef>
+</Defs>

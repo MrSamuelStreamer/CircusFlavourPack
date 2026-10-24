@@ -4,13 +4,13 @@ using Verse;
 
 namespace CircusFlavourPack.HarmonyPatches;
 
-// clown xenotype gets 'normal' meal comparable nutrition from VE dessert meals
+// pawns with the clown digestion gene get 'normal' meal comparable nutrition from VE dessert meals
 [HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.NutritionForEater))]
-public static class Patch_FoodUtility_NutritionForEater_ParticularXenotype
+public static class Patch_FoodUtility_NutritionForEater_Gene
 {
-    private const string ClownXenotypeDefName = "MSS_Clown";
-    private static XenotypeDef clownDef;
-    private static XenotypeDef ClownDef => clownDef ??= DefDatabase<XenotypeDef>.GetNamedSilentFail(ClownXenotypeDefName);
+    private const string DessertNutritionGeneDefName = "MSS_ClownDigestion";
+    private static GeneDef dessertNutritionGeneDef;
+    private static GeneDef DessertNutritionGeneDef => dessertNutritionGeneDef ??= DefDatabase<GeneDef>.GetNamedSilentFail(DessertNutritionGeneDefName);
 
     public static void Postfix(Pawn eater, Thing food, ref float __result)
     {
@@ -18,8 +18,9 @@ public static class Patch_FoodUtility_NutritionForEater_ParticularXenotype
         {
             return;
         }
-        XenotypeDef clown = ClownDef;
-        if (clown == null || eater?.genes?.Xenotype != clown)
+
+        GeneDef gene = DessertNutritionGeneDef;
+        if (gene == null || eater?.genes == null || !eater.genes.HasActiveGene(gene))
         {
             return;
         }
