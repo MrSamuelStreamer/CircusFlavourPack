@@ -39,6 +39,7 @@
       <li>AptitudePoor_Cooking</li>
       <li>AptitudePoor_Intellectual</li>
       <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_Bubblegum</li>
+      <li>MSS_ClownDigestion</li>
     </genes>
   </XenotypeDef>
   <XenotypeDef>
