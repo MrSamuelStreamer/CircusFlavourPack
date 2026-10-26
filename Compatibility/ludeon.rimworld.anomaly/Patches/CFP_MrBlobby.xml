@@ -167,6 +167,12 @@
             <description>An articulated spine-like object from a dead Mr Blobby. It is a chaotic mesh of sharpened metal spokes, twisted into a warped cage. The material appears to be rough-cast black iron smeared in a dark, slippery fluid. Anyone who peers too closely inside its jagged form is left with a skull-splitting headache.\n\nYou can destroy the spine to permanently kill the revenant.\n\nAlternatively, you can secure it on a holding platform and wait for the revenant to re-emerge, so you can study the captured entity.</description>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RevenantSpine"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/CFP_MrBlobby/CFP_MrBlobbySpine</texPath>
+		</value>
+	</Operation>
 
 
 	<Operation Class="PatchOperationReplace">
