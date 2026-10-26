@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/EntityCodexEntryDef[defName="Revenant"]/label</xpath>
+		<value>
+			<label>Mr Blobby</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="RevenantInvisibility"]/label</xpath>
+		<value>
+			<label>Mr Blobby invisibility</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="RevenantInvisibility"]/description</xpath>
+		<value>
+			<description>Use the Mr Blobby vertebrae to temporarily turn invisible. The prosthetic manipulates the visual centers of those nearby, letting the user pass unnoticed.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RevenantVertebrae"]/label</xpath>
+		<value>
+			<label>Mr Blobby vertebrae</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RevenantVertebrae"]/description</xpath>
+		<value>
+			<description>An installed prosthetic that allows the user to temporarily become invisible. The prosthetic is crafted from a modified Mr Blobby spine, using archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RevenantVertebrae"]/label</xpath>
+		<value>
+			<label>Mr Blobby vertebrae</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RevenantVertebrae"]/description</xpath>
+		<value>
+			<description>A prosthetic spine that allows the user to temporarily become invisible. The prosthetic is crafted from a modified Mr Blobby spine and uses archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallRevenantVertebrae"]/label</xpath>
+		<value>
+			<label>install Mr Blobby vertebrae</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallRevenantVertebrae"]/description</xpath>
+		<value>
+			<description>install Mr Blobby vertebrae</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallRevenantVertebrae"]/jobString</xpath>
+		<value>
+			<jobString>installing Mr Blobby vertebrae</jobString>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RevenantHypnosis"]/label</xpath>
+		<value>
+			<label>Mr Blobby hypnosis</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RevenantHypnosis"]/description</xpath>
+		<value>
+			<description>This person has been hypnotized by mr blobby and remains linked to it. They ramble about nightmarish creatures while their unblinking eyes stare at invisible horrors.\n\nAfter hypnotizing a victim, the revenant will hibernate somewhere on the same map as its victim.\n\nKilling the revenant will end the hypnosis. A hidden revenant can be revealed by disruptor flares, explosives, EMP, firefoam, or fire.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Revenant"]/label</xpath>
+		<value>
+			<label>Mr Blobby</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Revenant"]/lifeStages</xpath>
+		<value>
+            <lifeStages>
+                <li>
+                    <bodyGraphicData>
+                        <texPath>Things/CFP_MrBlobby/CFP_MrBlobby</texPath>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                        <drawSize>2</drawSize>
+                    </bodyGraphicData>
+                    <silhouetteGraphicData>
+                        <texPath>Things/CFP_MrBlobby/CFP_MrBlobby_south</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <drawSize>2</drawSize>
+                    </silhouetteGraphicData>
+                </li>
+            </lifeStages>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"]/label</xpath>
+		<value>
+			<label>Mr Blobby invisibility</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"]/description</xpath>
+		<value>
+			<description>Modify a Mr Blobby spine so that it can be implanted in a human, allowing them to become temporarily invisible.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="MysteriousCargoRevenantSpine"]/label</xpath>
+		<value>
+			<label>mysterious cargo Mr Blobby</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="RevenantEmergence"]/label</xpath>
+		<value>
+			<label>Mr Blobby emergence</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="RevenantEmergence"]/letterLabel</xpath>
+		<value>
+			<letterLabel>Mr Blobby spine humming</letterLabel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="RevenantEmergence"]/letterText</xpath>
+		<value>
+			<letterText>The Mr Blobby spine is becoming more active and emitting an ominous hum. Destroy it or restrain it on a holding platform before it's too late.</letterText>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="Revenant"]/label</xpath>
+		<value>
+			<label>Mr Blobby</label>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RevenantSpine"]/label</xpath>
+		<value>
+			<label>Mr Blobby spine</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RevenantSpine"]/description</xpath>
+		<value>
+            <description>An articulated spine-like object from a dead Mr Blobby. It is a chaotic mesh of sharpened metal spokes, twisted into a warped cage. The material appears to be rough-cast black iron smeared in a dark, slippery fluid. Anyone who peers too closely inside its jagged form is left with a skull-splitting headache.\n\nYou can destroy the spine to permanently kill the revenant.\n\nAlternatively, you can secure it on a holding platform and wait for the revenant to re-emerge, so you can study the captured entity.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Revenant"]/label</xpath>
+		<value>
+			<label>Mr Blobby</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Revenant"]/race/renderTree</xpath>
+		<value>
+			<renderTree>CFP_MrBlobby</renderTree>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Revenant"]/uiIconPath</xpath>
+		<value>
+			<uiIconPath>Things/CFP_MrBlobby/CFP_MrBlobby_south</uiIconPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Revenant"]/description</xpath>
+		<value>
+            <description>A plump figure of spotted skin stretched over an impossibly rotund humanoid frame. The origins of Mr Blobbys's name is unknown.\n\nOutlander folklore describes an invisible spectre that captures the minds of sinners, placing them in a living hell. In the story, the victims can only be returned to life by hunting the creature as it sleeps and killing it.\n\nA hidden Mr Blobby can be revealed with disruptor flares, explosives, EMP, firefoam, or fire.</description>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FleckDef[defName="RevenantDeath"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/CFP_MrBlobby/CFP_MrBlobby_south</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FleckDef[defName="RevenantDeathPuddle"]/randomGraphics</xpath>
+		<value>
+			<randomGraphics>
+                <li>
+                    <texPath>Things/CFP_MrBlobby/CFP_MrBlobbyBloodPoolA</texPath>
+                    <shaderType>Mote</shaderType>
+                    <renderInstanced>false</renderInstanced>
+                    <graphicClass>Graphic_Fleck</graphicClass>
+                </li>
+                <li>
+                    <texPath>Things/CFP_MrBlobby/CFP_MrBlobbyBloodPoolB</texPath>
+                    <shaderType>Mote</shaderType>
+                    <renderInstanced>false</renderInstanced>
+                    <graphicClass>Graphic_Fleck</graphicClass>
+                </li>
+                
+                <li>
+                    <texPath>Things/CFP_MrBlobby/CFP_MrBlobbyBloodPoolC</texPath>
+                    <shaderType>Mote</shaderType>
+                    <renderInstanced>false</renderInstanced>
+                    <graphicClass>Graphic_Fleck</graphicClass>
+                </li>
+            </randomGraphics>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Call"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/Call</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Wounded"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/Wounded</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Death"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/Death</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Revealed"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/Revealed</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Stealth"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/Stealth</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_StartledScream"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>CFP_MrBlobby/StartledScream</clipFolderPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Pawn_Revenant_Hypnotize"]/subSounds/li/grains</xpath>
+		<value>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>CFP_MrBlobby/Hypnotize/CFP_MrBlobby_Hypnotize_Loop_A_01</clipPath>
+				</li>
+			</grains>
+		</value>
+	</Operation>
+
+</Patch>

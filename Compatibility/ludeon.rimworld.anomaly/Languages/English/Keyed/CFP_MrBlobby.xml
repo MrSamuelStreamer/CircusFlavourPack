@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+	<AlertRevenantFlesh>Mr Blobby flesh</AlertRevenantFlesh>
+	<AlertRevenantFleshDesc>The wounded Mr Blobby left behind a piece of itself. Analyze it to learn how to track the Mr Blobby.</AlertRevenantFleshDesc>
+	<MessageRevenantForcedVisibility>A hidden Mr Blobby has been revealed!</MessageRevenantForcedVisibility>
+	<MessageRevenantHeard>{PAWN_nameDef} can hear the Mr Blobby {1} nearby!</MessageRevenantHeard>
+
+	<LetterLabelRevenantRevealed>Mr Blobby attack</LetterLabelRevenantRevealed>
+	<LetterRevenantRevealed>A Mr Blobby has revealed itself!</LetterRevenantRevealed>
+	<LetterRevenantRevealedFirst>A Mr Blobby has revealed itself and is hunting one of your colonists!</LetterRevenantRevealedFirst>
+	<LetterLabelRevenantSmearDiscovered>Mr Blobby smear discovered</LetterLabelRevenantSmearDiscovered>
+	<LetterRevenantSmearDiscovered>{0} has noticed a black slick on the ground. It looks unnatural and gives off a foul, acrid smell. It is still fresh and wet. An eldritch entity passed by recently.</LetterRevenantSmearDiscovered>
+	<LetterLabelRevenantKilled>Mr Blobby killed</LetterLabelRevenantKilled>
+	<LetterRevenantKilled>The Mr Blobby is dead! Those who were hypnotized will recover.\n\nIts body has dissipated, leaving behind its spine. You can gather and study the spine, or destroy it.</LetterRevenantKilled>
+	<LetterLabelPawnHypnotized>{PAWN_nameDef} hypnotized</LetterLabelPawnHypnotized>
+	<LetterPawnHypnotized>{PAWN_nameDef} has been hypnotized by a Mr Blobby and is now rambling incoherently about nightmarish images and ideas.\n\nKilling the Mr Blobby will end the hypnosis.\n\nThe Mr Blobby uses psychic powers to twist the perceptions of those around it, making itself invisible. However, it can still be hunted by following the black smears that it leaves. The Mr Blobby will be revealed if hit by explosive weapons, firefoam, EMPs, fire, or disruptor flares.\n\nIf not killed, the Mr Blobby will continue to hypnotize new victims.</LetterPawnHypnotized>
+	<LetterRevenantFleshChunkLabel>Mr Blobby flesh chunk</LetterRevenantFleshChunkLabel>
+	<LetterRevenantFleshChunkText>The wounded Mr Blobby left behind a piece of itself. You can analyze this flesh chunk to learn how to track the Mr Blobby.</LetterRevenantFleshChunkText>
+	<LetterRevenantSeenLabel>Mr Blobby seen</LetterRevenantSeenLabel>
+	<LetterRevenantSeen>{PAWN_nameDef} has seen a hiding Mr Blobby!</LetterRevenantSeen>
+	<LetterLabelRevenantEmergence>Mr Blobby emergence</LetterLabelRevenantEmergence>
+	<LetterRevenantEmergence>The Mr Blobby has reemerged from the safety of its spine! Destroy it before it escapes.\n\nIn the process, the Mr Blobby has mutated and adopted a new biosignature.</LetterRevenantEmergence>
+
+</LanguageData>

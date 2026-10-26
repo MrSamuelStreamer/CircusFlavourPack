@@ -3,12 +3,14 @@
   <v1.6>
     <li>Common</li>
     <li>1.6</li>
+    <li IfModActive="ludeon.rimworld.anomaly">Compatibility/ludeon.rimworld.anomaly</li>
     <li IfModActive="sarg.alpharandom">Compatibility/sarg.alpharandom/1.6</li>
     <li IfModActive="Mlie.SomeThingsFloat">Compatibility/Mlie.SomeThingsFloat/1.6</li>
   </v1.6>
   <v1.7>
     <li>Common</li>
     <li>1.7</li>
+    <li IfModActive="ludeon.rimworld.anomaly">Compatibility/ludeon.rimworld.anomaly</li>
     <li IfModActive="zal.clownmod">Compatibility/zal.clownmod</li>
     <li IfModActive="sarg.alpharandom">Compatibility/sarg.alpharandom/1.7</li>
     <li IfModActive="redmattis.bigsmall.core">Compatibility/redmattis.bigsmall.core/1.7</li>
