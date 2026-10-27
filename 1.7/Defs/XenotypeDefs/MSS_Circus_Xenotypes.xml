@@ -21,8 +21,6 @@
       <li>KillThirst</li>
       <li>Sterile</li>
       <li MayRequire="redmattis.bigsmall.core">BS_AlienApperanceStandards_Lesser</li>
-      <li MayRequire="redmattis.bigsmall.core">BS_CreepyHaired</li>
-      <li>Hair_LongOnly</li>
       <li>Beard_NoBeardOnly</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownBlue</li>
       <li MayRequire="clownnosegene.mod">Nose_ClownGreen</li>
