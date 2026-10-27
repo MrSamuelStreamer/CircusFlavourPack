@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <thingDef ParentName="ResourceBase">
+    <defName>MSS_Asbestos</defName>
+    <label>asbestos</label>
+    <description>A soft, silken mineral fibre that is completely fireproof. Properly treated and woven, it makes an exceptional building material and insulator.\nHowever, in its current state, it crumbles and shears easily into dust.</description>
+    <graphicData>
+      <texPath>Things/asbestos</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </thingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MSS_Clownthread</defName>
+    <label>Compliant treated fabric</label>
+    <description>A mysterious synthetic fabric, it has been stamped with "BS 7837:1996 compliant treated fabric" on the edge of the spool. Seemingly designed primarily for insulation, which it excels at.\nIt is also very long-lasting, but is otherwise unsuitable as a protective material for clothing.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(112,107,102)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.3</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp> <!-- comparable to cloth -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- comparable to cloth -->
+      <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat> <!-- comparable to cloth -->
+      <StuffPower_Insulation_Cold>44</StuffPower_Insulation_Cold> <!-- best basegame is megasloth/thrumbo at 34 -->
+      <StuffPower_Insulation_Heat>36</StuffPower_Insulation_Heat> <!-- best basegame is hyperweave at 26 -->
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(112,107,102)</color>
+      <statFactors>
+        <Flammability>0</Flammability>
+        <MaxHitPoints>2.8</MaxHitPoints> <!-- best basegame textile is hyperweave at 2.4 -->
+        <Beauty>2.3</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+  <RecipeDef>
+		<defName>MSS_Craft_Clownthread</defName>
+		<label>spin compliant treated fabric (x50)</label>
+		<description>Spin BS 7837:1996 compliant treated fabric from Asbestos and Cloth.</description>
+    <jobString>Spinning compliant treated fabric.</jobString>
+		<displayPriority>0</displayPriority>
+		<workAmount>7500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSS_Asbestos</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+    </ingredients>
+		<products>
+			<MSS_Clownthread>50</MSS_Clownthread>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+  <RecipeDef>
+		<defName>MSS_Craft_Clownthread_little</defName>
+		<label>spin compliant treated fabric (x10)</label>
+		<description>Spin BS 7837:1996 compliant treated fabric from Asbestos and Cloth.</description>
+    <jobString>Spinning compliant treated fabric.</jobString>
+		<displayPriority>0</displayPriority>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSS_Asbestos</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+    </ingredients>
+		<products>
+			<MSS_Clownthread>10</MSS_Clownthread>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

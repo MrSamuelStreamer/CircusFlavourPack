@@ -81,6 +81,31 @@
       <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_Black</li>
       <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_GhostGrey</li>
       <li MayRequire="lazyfridaystudio.genesexpandedblood">GEB_Blood_White</li>
+      <li>MSS_ClownDigestion</li>
+    </genes>
+  </XenotypeDef>
+  <XenotypeDef>
+    <defName>MSS_Failedclown</defName>
+    <label>Failed clownkin</label>
+    <description>Failed clownkin are the complete failure of the clownkin xenotype when something goes terribly wrong, so wrong that it wasn't even a Mimekin.
+Considered useless and discarded as a failed experiment, they do however have a curious mutation: they secrete a mysterious resource known as "Asbestos", a completely fireproof substrance.</description>
+    <descriptionShort>A mutant being created by a gross failure during a Clownkin conversion.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon16</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>
+      <li MayRequire="ludeon.rimworld.odyssey">VacuumResistance_Partial</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_CannotWearArmor</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_NoEquip</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Xenolocked</li>
+      <li MayRequire="redmattis.bigsmall.core">FireImmunity</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_DeepVioletSkin</li>
+      <li>Beauty_Pretty</li>
+      <li>Pain_Extra</li>
+      <li>Sterile</li>
+      <li>AddictionImmune_Psychite</li>
+      <li>MSS_Asbestos_Producer</li>
+      <li>MSS_ClownDigestion</li>
     </genes>
   </XenotypeDef>
 </Defs>
