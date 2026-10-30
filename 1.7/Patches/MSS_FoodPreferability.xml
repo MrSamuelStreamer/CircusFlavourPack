@@ -56,19 +56,19 @@
     <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="VCE_DeepFriedBigMeat"]/ingestible/preferability</xpath>
     <value>
-      <preferability>MealSimple</preferability>
+      <preferability>RawTasty</preferability>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="VCE_DeepFriedVegetables"]/ingestible/preferability</xpath>
     <value>
-      <preferability>MealSimple</preferability>
+      <preferability>RawTasty</preferability>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="VCE_DeepFriedFish"]/ingestible/preferability</xpath>
     <value>
-      <preferability>MealSimple</preferability>
+      <preferability>RawTasty</preferability>
     </value>
   </Operation>
 
