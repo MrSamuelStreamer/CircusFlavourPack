@@ -49,7 +49,26 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="VCE_GourmetDessert"]/ingestible/optimalityOffsetHumanlikes</xpath>
     <value>
-      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_DeepFriedBigMeat"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealSimple</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_DeepFriedVegetables"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealSimple</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_DeepFriedFish"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealSimple</preferability>
     </value>
   </Operation>
 
