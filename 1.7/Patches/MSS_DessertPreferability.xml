@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- patches desserts to have preferability similar to meals. intended to only work for pawns with MSS_ClownDigestion gene, see 1.6/Source/CircusFlavourPack/HarmonyPatches/Patch_FoodUtility_Gene.cs -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_SimpleDessert"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealSimple</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VCE_SimpleDessert"]/ingestible</xpath>
+    <value>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_FineDessert"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealFine</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VCE_FineDessert"]/ingestible</xpath>
+    <value>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_LavishDessert"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealLavish</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VCE_LavishDessert"]/ingestible</xpath>
+    <value>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_GourmetDessert"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealLavish</preferability>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCE_GourmetDessert"]/ingestible/optimalityOffsetHumanlikes</xpath>
+    <value>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </value>
+  </Operation>
+
+</Patch>
