@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Backgrounds Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<VBE.BackgroundImageDef>
+					<label>Big Top</label>
+					<description>A generic and royalty free big top. (Source: Adobe Stock)</description>
+					<defName>MSS_BigTop</defName>
+					<path>BigTop</path>
+				</VBE.BackgroundImageDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
