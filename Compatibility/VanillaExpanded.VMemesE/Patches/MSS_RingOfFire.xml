@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Fireproofed buildings: Core's Flammability stat has no <parts> node, so create it when missing. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="Flammability"]/parts</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="Flammability"]/parts</xpath>
+			<value>
+				<li Class="CircusFlavourPack.Fireproofing.StatPart_Fireproofed" />
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="Flammability"]</xpath>
+			<value>
+				<parts>
+					<li Class="CircusFlavourPack.Fireproofing.StatPart_Fireproofed" />
+				</parts>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- The Majordomo role only exists when Royalty is active as well. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="VME_IdeoRole_Majordomo"]/grantedAbilities</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="VME_IdeoRole_Majordomo"]/grantedAbilities</xpath>
+			<value>
+				<li>MSS_RingOfFireRehearsal</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

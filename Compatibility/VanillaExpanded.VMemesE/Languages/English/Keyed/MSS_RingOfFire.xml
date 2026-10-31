@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<MSS_CFP_RingOfFire_StatExplanation>Ring of Fire Rehearsal: fireproof</MSS_CFP_RingOfFire_StatExplanation>
+	<MSS_CFP_RingOfFire_Applied>{PAWN_nameDef} ran the ring of fire rehearsal. {1} structures and {2} floor tiles are now fireproof.</MSS_CFP_RingOfFire_Applied>
+</LanguageData>

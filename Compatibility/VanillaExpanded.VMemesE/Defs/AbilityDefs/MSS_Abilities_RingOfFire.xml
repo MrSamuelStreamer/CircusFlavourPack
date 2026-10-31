@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>MSS_RingOfFireRehearsal</defName>
+		<cooldownTicks>30000</cooldownTicks>
+	</AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>MSS_RingOfFireRehearsal</defName>
+		<label>ring of fire rehearsal</label>
+		<description>Drill the troupe through the flaming-hoop finale until the big top itself learns not to burn. Permanently fireproofs every floor and every colony-owned wall, door, column and fence within the radius.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>MSS_RingOfFireRehearsal</groupDef>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<targetRequired>false</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<showPsycastEffects>false</showPsycastEffects>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Icons/CFP_RingOfFire</iconPath>
+		<statBases>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<uiOrder>2</uiOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<range>10</range>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CircusFlavourPack.Fireproofing.CompProperties_AbilityRingOfFireRehearsal" />
+		</comps>
+	</AbilityDef>
+</Defs>
