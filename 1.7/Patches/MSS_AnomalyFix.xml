@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ShardBeacon"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>false</requiresPower>
+                <thingToSpawn>Bioferrite</thingToSpawn>
+                <spawnCount>50</spawnCount>
+                <spawnIntervalRange><min>180000</min><max>180000</max></spawnIntervalRange>
+                <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+                <showMessageIfOwned>true</showMessageIfOwned>
+            </li>
+        </value>
+    </Operation>
+</Patch>
